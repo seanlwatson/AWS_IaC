@@ -1,0 +1,7 @@
+---
+# playbook file for helloworld application
+
+- hosts: "{{ target | default('localhost') }}"
+  become: yes
+  roles:
+    - helloworld
